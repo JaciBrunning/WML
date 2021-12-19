@@ -34,12 +34,6 @@ namespace GyroFollower {
 		 * PID controller
 		 */
 		double *kP = 0, *kI = 0, *kD = 0;
-
-		~Config() {
-			free(kP);
-			free(kI);
-			free(kD);
-		}
 	};
 
 	/**
